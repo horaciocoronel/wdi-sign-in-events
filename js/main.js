@@ -5,6 +5,8 @@ document.addEventListener("DOMContentLoaded",
   modalWindow = document.querySelector('.modal')
   closeBtn = document.querySelector('.close')
   submitBtn = document.querySelector('.submit')
+  formContainer = document.querySelector('.getstarted')
+
  //
   signInBtn.addEventListener('click', event => {
     event.stopPropagation()
@@ -19,18 +21,18 @@ document.addEventListener("DOMContentLoaded",
 
   pass.addEventListener('click', clearError)
 
-  modalWindow.addEventListener('click', closeWindow)
+  formContainer.addEventListener('click', closeWindow)
 
  // ES6 Declaring functions using fat arrow
- function(a,b) {
-   return a+b;
- }
- function(a) {
-   return a*a;
- }
-
- (a,b) => a+b
- a => a*a
+ // function(a,b) {
+ //   return a+b;
+ // }
+ // function(a) {
+ //   return a*a;
+ // }
+ //
+ // (a,b) => a+b
+ // a => a*a
 
  function closeWindow(event) {
    event.stopPropagation()
